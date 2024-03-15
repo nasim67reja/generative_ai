@@ -55,3 +55,13 @@ agent=initialize_agent(tool,client,agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,v
 # print(output) #The Australian Men's Cricket Team won the 2023 Cricket World Cup.
 
 ######################## so in the term of agent. at first create the tool then initiate it with agent
+
+########################### 👉👉👉👉👉👉 Chain ############################################################
+
+prompt=PromptTemplate.from_template("what is a good name for a company that makes {product}")
+
+from langchain.chains import LLMChain
+
+chain=LLMChain(llm=client,prompt=prompt)
+
+print(chain.run("Book"))

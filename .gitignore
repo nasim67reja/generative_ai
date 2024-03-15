@@ -16,3 +16,5 @@ pdfs/
 winvenv
 openai-env
 langchain-env
+memory_hugenv
+huglangenv

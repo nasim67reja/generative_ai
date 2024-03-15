@@ -1,0 +1,4 @@
+langchain
+google-search-results
+langchain-community
+langchain-openai
